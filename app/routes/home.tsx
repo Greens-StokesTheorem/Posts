@@ -11,6 +11,6 @@ export function loader({ context }) {
   return { message: context.VALUE_FROM_EXPRESS };
 }
 
-export default function Home({ loaderData }: Route) {
+export default function Home({ loaderData }) {
   return <Welcome message={loaderData.message} />;
 }
